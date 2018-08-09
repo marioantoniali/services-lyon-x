@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>liste des crypto-monnaies</h1>
 <%= form_tag(root_path, :method => "post", id: "search-form") do %>
 <%= text_field_tag :search, params[:search], placeholder: "Search Monnaies" %>
@@ -11,6 +12,9 @@
     </tr>
   </thead>
   <tbody>
-
+<%= form_for @Crypto do |f| %>
+  <% f.text_field %>
+<% end %>
   </tbody>
 </table>
+
