@@ -1,7 +1,9 @@
+<center>
 <h1>Liste des crypto-monnaies</h1>
 <%= form_tag(cryptos_path, method: :get) do %>
   <%= select_tag "search", options_from_collection_for_select(Crypto.all, 'id', 'name') %>
   <%= submit_tag "Search", name: nil %>
 <% end %><br/>
 
-<p>Le cours du <strong><%= Crypto.find_by(id: params[:search]).name %></strong> est de <strong><%= Crypto.find_by(id: params[:search]).value %></strong></p>  <!-- Avec un select_tag il n'est pas la peine de définir un params car celui-ci est automatiquement définit, il faut donc utiliser ce params (ici id mais renvoie le name en affichage) pour aller chercher dans la BDD
+<p>Le cours du <strong><%= Crypto.find_by(id: params[:search]).name %></strong> est de <strong><%= Crypto.find_by(id: params[:search]).value %></strong></p>  <!-- Avec un select_tag il n'est pas la peine de définir un params car celui-ci est automatiquement définit, il faut donc utiliser ce params (ici id mais renvoie le name en affichage) pour aller chercher dans la BDD -->
+</center>
