@@ -10,6 +10,11 @@ class StartScrap
   end
 
   def perform
+    scrap_crypto
+    save
+  end
+
+  def scrap_crypto
     page = Nokogiri::HTML(open(@address))
       crypto_name = page.css('a.currency-name-container').map { |crypto| crypto.text }
       crypto_price = page.css('a.price').map { |price| price.text }
@@ -18,6 +23,6 @@ class StartScrap
   end
 
   def save
-    StartScrap.new.perform.each { |name, price| Crypto.save(name: name, value: price) }
+    @my_hash.each { |name, price| Crypto.create(name: name, value: price) }
   end
 end
