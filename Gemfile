@@ -67,11 +67,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-<<<<<<< HEAD
 # Bootstrap
 gem 'bootstrap'
 gem 'bootstrap-sass'
-=======
-gem 'bootstrap'
-gem 'bootstrap-sass'
->>>>>>> 76bd9230e986ac64f96b43deb10d0ffa6a775ac3
