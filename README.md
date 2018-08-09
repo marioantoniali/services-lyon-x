@@ -30,4 +30,4 @@ rails server
 
 ```
 
-# # [Services-Lyon x](https://services-lyon-x.herokuapp.com/)
+# # [Services-Lyon x](https://crypto-service-lyon.herokuapp.com/)
