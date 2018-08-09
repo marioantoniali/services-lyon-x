@@ -1,26 +1,34 @@
-# README
+# # <a href="https://services-lyon-x.herokuapp.com/
+">Secret-Lyon</a>README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ce Readme permet d'afficher le cours actuelle de la crypto-monnaie.
 
-Things you may want to cover:
+#Voici le [Git](https://github.com/willyGitHub18/services-lyon-x/releases)
 
-* Ruby version
+------------------------------
+# On utilise;$
 
-* System dependencies
+* la base sqlite3
+* ruby '2.5.1'
+* gem 'rails', '~> 5.2.1'
 
-* Configuration
 
-* Database creation
+------------------------------
+# Instructions #
 
-* Database initialization
+Pour tester cette application, importer le dossier sur votre pc, en suivant les instructions suivantes;
 
-* How to run the test suite
+```Importez dans votre dossier,
 
-* Services (job queues, cache servers, search engines, etc.)
+git clone https://github.com/willyGitHub18/services-lyon-x/releases
 
-* Deployment instructions
+puis cd services-lyon-x
 
-* ...
+bundle install --without production
+
+rails db:migrate
+
+rails server```
+
 
 https://services-lyon-x.herokuapp.com/
