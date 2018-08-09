@@ -1,12 +1,9 @@
-# # <a href="https://services-lyon-x.herokuapp.com/
-">Secret-Lyon</a>README
+# README
 
-Ce Readme permet d'afficher le cours actuelle de la crypto-monnaie.
-
-#Voici le [Git](https://github.com/willyGitHub18/services-lyon-x/releases)
+Ce README permet d'afficher le cours actuel de la crypto-monnaie.
 
 ------------------------------
-# On utilise;$
+# On utilise
 
 * la base sqlite3
 * ruby '2.5.1'
@@ -18,7 +15,8 @@ Ce Readme permet d'afficher le cours actuelle de la crypto-monnaie.
 
 Pour tester cette application, importer le dossier sur votre pc, en suivant les instructions suivantes;
 
-```Importez dans votre dossier,
+```
+Importez dans votre dossier,
 
 git clone https://github.com/willyGitHub18/services-lyon-x/releases
 
@@ -28,7 +26,8 @@ bundle install --without production
 
 rails db:migrate
 
-rails server```
+rails server
 
+```
 
-https://services-lyon-x.herokuapp.com/
+# # [Secret-Lyon x](https://services-lyon-x.herokuapp.com/)
