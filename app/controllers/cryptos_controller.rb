@@ -4,4 +4,8 @@ class CryptosController < ApplicationController
     @search = params[:search]
     @cryptos = Crypto.find_by(name: @search)
   end
+
+  def load
+    StartScrap.new.perform
+  end
 end
