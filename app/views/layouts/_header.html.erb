@@ -5,10 +5,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
       </ul>
-      <%= form_with to_model: @crypto do |f| %>
-        <% options = options_from_collection_for_select(@crypto, 'id', 'name') %>
-        <%= f.select :all_val,  options %>
-      <% end %>
+
     </nav>
   </div>
 </header>
