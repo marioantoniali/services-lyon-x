@@ -5,5 +5,8 @@
   <%= submit_tag "Search", name: nil %>
 <% end %><br/>
 
-<p>Le cours du <strong><%= Crypto.find_by(id: params[:search]).name %></strong> est de <strong><%= Crypto.find_by(id: params[:search]).value %></strong></p>  <!-- Avec un select_tag il n'est pas la peine de définir un params car celui-ci est automatiquement définit, il faut donc utiliser ce params (ici id mais renvoie le name en affichage) pour aller chercher dans la BDD -->
+<% if(!@cryptos.nil?)%>
+    <p>Le cours du <strong><%= @cryptos.name %></strong> est de <strong><%= @cryptos.value %></strong></p>  <!-- Avec un select_tag il n'est pas la peine de définir un params car celui-ci est automatiquement définit, il faut donc utiliser ce params (ici id mais renvoie le name en affichage) pour aller chercher dans la BDD -->
+<%end%>
+
 </center>
