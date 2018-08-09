@@ -4,4 +4,9 @@
   <%= submit_tag 'Search', name: nil %>
 <% end %><br />
 
+<%= form_tag(cryptos_path, method: :get) do %>
+  <%= select_tag "crypto", options_from_collection_for_select(Crypto.all, 'id', 'name', selected: params[:search]) %>
+  <%= submit_tag "Search", name: nil %>
+<% end %><br/>
+
 <p>Le cours du <strong><%= @cryptos.name %></strong> est de <strong><%= @cryptos.value %></strong> </p>
