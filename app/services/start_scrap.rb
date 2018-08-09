@@ -14,12 +14,10 @@ class StartScrap
       crypto_name = page.css('a.currency-name-container').map { |crypto| crypto.text }
       crypto_price = page.css('a.price').map { |price| price.text }
 
-    my_hash = crypto_name.zip(crypto_price)
-
-    puts my_hash
+    @my_hash = crypto_name.zip(crypto_price)
   end
 
   def save
-
+    StartScrap.new.perform.each { |name, price| Crypto.save(name: name, value: price) }
   end
 end
